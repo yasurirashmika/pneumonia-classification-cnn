@@ -3,12 +3,12 @@
 Pneumonia detection from chest X-ray images using PyTorch and a Convolutional Neural Network (ResNet-18).
 
 ## Overview
-This project provides an end-to-end machine learning pipeline for medical image classification. It trains a ResNet-18 model to classify chest X-rays as either 'Normal' or 'Pneumonia' and deploys the trained model via a Flask web application. The deployment includes support for standard image formats as well as medical DICOM files, and features Grad-CAM visualization for explainable AI.
+This project provides an end-to-end deep learning pipeline for medical image classification. The dataset used for training is the **RSNA Pneumonia Detection Challenge** dataset, downloaded via Kaggle. It trains a ResNet-18 model to classify chest X-rays as either 'Normal' or 'Pneumonia' and deploys the trained model via a Flask web application. The deployment includes support for standard image formats as well as medical DICOM files, and features Grad-CAM visualization for explainable AI.
 
 ## Google Colab Notebooks
-You can view and run the code directly in Google Colab using the links below:
+You can view and run the code directly in Google Colab using the links below. *(Note: Training performance graphs and evaluation outputs are visible directly inside the training notebook).*
 
-* **[Training Notebook](https://colab.research.google.com/drive/1Ds3kjw_lSII2yCQdrgwX6s2sFG5B4e3-?usp=sharing)**: Handles data downloading, image preprocessing, and the PyTorch training loop.
+* **[Training Notebook](https://colab.research.google.com/drive/1Ds3kjw_lSII2yCQdrgwX6s2sFG5B4e3-?usp=sharing)**: Handles Kaggle data downloading, image preprocessing, and the PyTorch training loop.
 * **[Deployment Notebook](https://colab.research.google.com/drive/1Gl6SR1YOxrb0P0tRVLZflaolQLmC_jxJ?usp=sharing)**: Runs a Flask web server with Cloudflare tunneling, processes uploaded `.dcm` or `.jpg` files, and generates predictions with Grad-CAM heatmaps.
 
 ## Features
